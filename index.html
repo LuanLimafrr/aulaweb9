@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SENAC</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #212529;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    #home {
+      background-color: #ffffff;
+      color: #0d6efd;
+    }
+
+    #quemsomos {
+      background-color: #f1f3f5;
+    }
+
+    #lista {
+      background-color: #ffffff;
+    }
+
+    #contato {
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #ffffff !important;
+      border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: #212529 !important;
+    }
+
+    .nav-link:hover {
+      color: #0d6efd !important;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-title {
+      color: #0d6efd;
+    }
+
+    .table {
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    form input,
+    form label {
+      text-align: left;
+    }
+
+    form input[type="submit"] {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid px-0">
+    <nav class="navbar navbar-expand-lg shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="bi bi-mortarboard"></i> SENAC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home"><i class="bi bi-house-door"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quemsomos"><i class="bi bi-people"></i> Quem Somos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-person-badge"></i> Mais
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#lista"><i class="bi bi-list-ul"></i> Lista</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                      class="bi bi-info-circle"></i> Detalhe</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato"><i class="bi bi-envelope"></i> Contatos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="text-center">
+      <h1 class="mb-4">HOME</h1>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/img1.jpg" class="d-block w-100 rounded" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/img2.jpg" class="d-block w-100 rounded" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/img3.jpg" class="d-block w-100 rounded" alt="..." />
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section id="quemsomos" class="text-center">
+      <h1 class="mb-4 text-success">QUEM SOMOS</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/img3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Porto do Rio</h5>
+              <p class="card-text">Conheça o novo espaço urbano revitalizado na zona portuária do Rio de Janeiro.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/img1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Museu do Amanhã</h5>
+              <p class="card-text">Um museu de ciências diferente: interativo, moderno e com arquitetura impressionante.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="img/img2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Nova Parceria</h5>
+              <p class="card-text">Projetos de inovação em parceria com instituições locais e internacionais.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LISTA -->
+    <section id="lista" class="text-center">
+      <h1 class="mb-4">LISTA DE FUNCIONÁRIOS</h1>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead class="table-light">
+            <tr>
+              <th>#</th>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>Usuário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>John</td>
+              <td>Doe</td>
+              <td>@social</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="text-center">
+      <h1 class="mb-4 text-danger">CONTATO</h1>
+     
+
+            <form action="">
+                <label for="nome">nome</label>
+                <input type="text" class="form-control" placeholder="Digite o nome">
+                <br/>
+                <label for="nome">email</label>
+                <input type="email" class="form-control" placeholder="Digite o Email">
+                <br/>
+                <input type="submit" value="cadastrar" class="btn-primary">
+            </form>
+
+        </section>
+
+        <!-- Button trigger modal 
+<button type="button" class="btn btn-primary" >
+    Launch demo modal
+  </button>-->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Detalhes sobre o site!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          site produzido com bootstrap, html e css!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div><!-- fecha o container-->
+
+    <!-- javaScript do bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
